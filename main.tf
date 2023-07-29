@@ -41,7 +41,7 @@ resource "abbey_grant_kit" "IAM_membership" {
     steps = [
       {
         reviewers = {
-          one_of = ["arvil+test1@abbey.io"]
+          all_of = ["arvil+test1@abbey.io", "arvil.nagpal@gmail.com"]
         }
       }
     ]
@@ -71,7 +71,7 @@ resource "abbey_identity" "user_1" {
 }
 
 data "aws_iam_group" "group1" {
-  group_name = "aws-quickstart-test"
+  group_name = "aws-quickstart-test2"
 }
 
 
