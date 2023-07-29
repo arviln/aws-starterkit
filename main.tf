@@ -30,7 +30,7 @@ provider "aws" {
 }
 
 resource "abbey_grant_kit" "IAM_membership" {
-  name = "IAM_membership"
+  name = "IAM_membership_2"
   description = <<-EOT
     Grants membership to an IAM Group.
     This Grant Kit uses a single-step Grant Workflow that requires only a single reviewer
